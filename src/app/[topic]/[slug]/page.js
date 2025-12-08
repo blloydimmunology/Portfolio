@@ -24,7 +24,6 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: "Bryce's Journal",
     description: post.preview,
   };
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SearchButton from './SearchButton';
+import SubscribeForm from './SubscribeForm';
 import { siteConfig } from '@/config/site';
 import { getAllTopics, getAllPosts } from '@/utils/PostLoader';
 
@@ -21,12 +22,7 @@ export default async function TopBanner({ currentTopic }) {
 
             <div className="absolute right-0 flex items-center gap-3">
               <SearchButton allPosts={allPosts} />
-              <Link
-                href="/subscribe"
-                className="px-6 py-3 bg-primary-accent text-white text-sm font-medium hover:bg-primary-accent-hover transition-colors duration-200"
-              >
-                Subscribe
-              </Link>
+              <SubscribeForm />
             </div>
           </div>
         </div>

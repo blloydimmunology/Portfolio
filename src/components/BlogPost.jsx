@@ -72,6 +72,83 @@ export default function BlogPost({ post }) {
             img: ({ node, ...props }) => (
               <img className="w-full my-6" {...props} />
             ),
+            // Footnote reference (superscript link)
+            sup: ({ node, children, ...props }) => {
+              const id = props.id;
+              if (id && id.startsWith('fnref-')) {
+                return (
+                  <sup {...props}>
+                    <a
+                      href={`#${id.replace('fnref-', 'fn-')}`}
+                      className="text-primary-accent no-underline hover:underline font-normal"
+                      style={{ fontSize: '0.75em' }}
+                    >
+                      {children}
+                    </a>
+                  </sup>
+                );
+              }
+              return <sup {...props}>{children}</sup>;
+            },
+            // Footnote section
+            section: ({ node, ...props }) => {
+              if (props['data-footnotes']) {
+                return (
+                  <section
+                    {...props}
+                    className="mt-16 pt-8 border-t-2 border-divider"
+                  >
+                    <h2 className="text-xl font-semibold text-primary-text mb-6 font-serif">
+                      References
+                    </h2>
+                    {props.children}
+                  </section>
+                );
+              }
+              return <section {...props} />;
+            },
+            // Footnote list
+            ol: ({ node, ...props }) => {
+              if (props['data-footnotes']) {
+                return (
+                  <ol
+                    {...props}
+                    className="space-y-3 text-sm text-secondary-text"
+                    style={{ lineHeight: '1.6', counterReset: 'footnote-counter' }}
+                  />
+                );
+              }
+              return (
+                <ol className="mb-6 space-y-2 text-primary-text" style={{ lineHeight: '1.7' }} {...props} />
+              );
+            },
+            // Footnote list item
+            li: ({ node, ...props }) => {
+              const id = props.id;
+              if (id && id.startsWith('fn-')) {
+                // Filter out the first child (the footnote number) as we'll add it via CSS
+                const contentChildren = Array.isArray(props.children)
+                  ? props.children.filter((child, idx) => {
+                      // Skip the first element which is typically the footnote reference
+                      if (idx === 0 && child?.props?.['data-footnote-backref']) {
+                        return false;
+                      }
+                      return true;
+                    })
+                  : props.children;
+
+                return (
+                  <li
+                    {...props}
+                    className="relative"
+                    style={{ listStylePosition: 'inside' }}
+                  >
+                    {contentChildren}
+                  </li>
+                );
+              }
+              return <li {...props} />;
+            },
           }}
         >
           {post.content}

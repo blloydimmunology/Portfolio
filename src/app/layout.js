@@ -15,10 +15,7 @@ const crimsonText = Crimson_Text({
 });
 
 export const metadata = {
-  title: {
-    default: siteConfig.title,
-    template: `%s | ${siteConfig.title}`,
-  },
+  title: siteConfig.title,
   description: siteConfig.description,
 };
 
