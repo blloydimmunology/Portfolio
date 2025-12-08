@@ -34,15 +34,6 @@ export default function AboutPage() {
               biochemistry to public health. Each piece aims to combine scientific rigor
               with clear, readable prose.
             </p>
-
-            <h2 className="text-2xl font-semibold text-primary-text mt-12 mb-4 font-serif">
-              Get in Touch
-            </h2>
-
-            <p>
-              Interested in staying updated? <a href="/subscribe" className="text-primary-accent underline hover:text-primary-accent-hover transition-colors duration-200">Subscribe</a> to
-              receive new articles via email.
-            </p>
           </div>
         </article>
       </main>

@@ -13,9 +13,6 @@ export default function Footer() {
             <Link href="/about" className="text-secondary-text hover:text-primary-accent transition-colors duration-200">
               About
             </Link>
-            <Link href="/subscribe" className="text-secondary-text hover:text-primary-accent transition-colors duration-200">
-              Subscribe
-            </Link>
           </div>
         </div>
       </div>
