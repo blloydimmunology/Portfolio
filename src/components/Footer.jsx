@@ -2,23 +2,22 @@ import Link from 'next/link';
 import { siteConfig } from '@/config/site';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="border-t border-neutral-200/60 mt-20 pt-10 pb-12 bg-white/50">
-      <div className="max-w-4xl mx-auto px-6 text-center space-y-6">
-        <div className="flex justify-center gap-8 text-sm">
-          <Link
-            href="/about"
-            className="text-neutral-600 hover:text-blue-900 transition-colors font-medium"
-          >
-            About
-          </Link>
+    <footer className="border-t border-divider mt-24">
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        <div className="text-center">
+          <p className="text-sm text-secondary-text mb-3">
+            © {new Date().getFullYear()} {siteConfig.author}. All rights reserved.
+          </p>
+          <div className="flex gap-6 justify-center text-sm">
+            <Link href="/about" className="text-secondary-text hover:text-primary-accent transition-colors duration-200">
+              About
+            </Link>
+            <Link href="/subscribe" className="text-secondary-text hover:text-primary-accent transition-colors duration-200">
+              Subscribe
+            </Link>
+          </div>
         </div>
-
-        <p className="text-xs text-neutral-500 font-medium tracking-wide">
-          © {currentYear} {siteConfig.author}. All rights reserved.
-        </p>
       </div>
     </footer>
   );

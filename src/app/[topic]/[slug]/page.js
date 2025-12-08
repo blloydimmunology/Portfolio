@@ -4,7 +4,6 @@ import BlogPost from '@/components/BlogPost';
 import Footer from '@/components/Footer';
 import { getPost, getAllPosts } from '@/utils/PostLoader';
 
-// Generate static params for all posts
 export async function generateStaticParams() {
   const posts = await getAllPosts();
 
@@ -14,7 +13,6 @@ export async function generateStaticParams() {
   }));
 }
 
-// Generate metadata for each post
 export async function generateMetadata({ params }) {
   const { topic, slug } = params;
   const post = await getPost(topic, slug);
@@ -33,11 +31,8 @@ export async function generateMetadata({ params }) {
 
 export default async function PostPage({ params }) {
   const { topic, slug } = params;
-
-  // Get the post
   const post = await getPost(topic, slug);
 
-  // If post not found, show 404
   if (!post) {
     notFound();
   }
@@ -46,7 +41,7 @@ export default async function PostPage({ params }) {
     <>
       <TopBanner currentTopic={topic} />
 
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-4xl mx-auto px-6 py-16">
         <BlogPost post={post} />
       </main>
 

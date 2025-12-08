@@ -1,19 +1,17 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export default function SearchBar({ allPosts }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [results, setResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
-  const router = useRouter();
 
   const handleSearch = (term) => {
     setSearchTerm(term);
 
-    if (term.trim() === '') {
+    if (term.trim().length < 2) {
       setResults([]);
       setShowResults(false);
       return;
@@ -21,7 +19,8 @@ export default function SearchBar({ allPosts }) {
 
     const filtered = allPosts.filter(post =>
       post.title.toLowerCase().includes(term.toLowerCase()) ||
-      post.preview.toLowerCase().includes(term.toLowerCase())
+      post.preview.toLowerCase().includes(term.toLowerCase()) ||
+      post.topic.toLowerCase().includes(term.toLowerCase())
     );
 
     setResults(filtered);
@@ -34,7 +33,7 @@ export default function SearchBar({ allPosts }) {
         type="text"
         value={searchTerm}
         onChange={(e) => handleSearch(e.target.value)}
-        onFocus={() => searchTerm && setShowResults(true)}
+        onFocus={() => searchTerm.length >= 2 && setShowResults(true)}
         placeholder="Search posts..."
         className="w-full px-4 py-2 border border-divider text-sm text-primary-text placeholder:text-tertiary-text focus:outline-none focus:border-primary-accent transition-colors duration-200"
       />
