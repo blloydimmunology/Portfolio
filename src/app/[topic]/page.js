@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
   const topicTitle = topic.charAt(0).toUpperCase() + topic.slice(1);
 
   return {
-    title: topicTitle,
+    title: "Bryce's Journal",
     description: `Browse all posts about ${topicTitle}`,
   };
 }

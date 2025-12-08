@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import { siteConfig } from '@/config/site';
 
 export const metadata = {
-  title: 'Subscribe',
+  title: "Bryce's Journal",
   description: `Subscribe to ${siteConfig.title}`,
 };
 
