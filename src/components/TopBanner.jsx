@@ -2,7 +2,6 @@ import Link from 'next/link';
 import SearchBar from './SearchBar';
 import { siteConfig } from '@/config/site';
 import { getAllTopics, getAllPosts } from '@/utils/PostLoader';
-import { getTopicConfig } from '@/config/topics';
 
 export default async function TopBanner({ currentTopic }) {
   const topics = await getAllTopics();
