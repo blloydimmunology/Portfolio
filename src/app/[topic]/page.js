@@ -16,7 +16,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const { topic } = params;
+  const { topic } = await params;
   const topicTitle = topic.charAt(0).toUpperCase() + topic.slice(1);
 
   return {
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function TopicPage({ params }) {
-  const { topic } = params;
+  const { topic } = await params;
   const posts = await getPostsByTopic(topic);
 
   if (!posts || posts.length === 0) {
