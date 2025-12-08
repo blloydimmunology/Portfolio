@@ -14,7 +14,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const { topic, slug } = params;
+  const { topic, slug } = await params;
   const post = await getPost(topic, slug);
 
   if (!post) {
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function PostPage({ params }) {
-  const { topic, slug } = params;
+  const { topic, slug } = await params;
   const post = await getPost(topic, slug);
 
   if (!post) {
