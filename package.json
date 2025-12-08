@@ -2,7 +2,7 @@
   "name": "medical-blog",
   "version": "1.0.0",
   "description": "A medical and biology focused blog",
-  "author": "Your Name",
+  "author": "Bryce Lloyd",
   "private": true,
   "scripts": {
     "dev": "next dev",
