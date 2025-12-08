@@ -21,7 +21,7 @@ export default function PostList({ posts, subtopics }) {
   if (!posts || posts.length === 0) {
     return (
       <div className="text-center py-12">
-        <p className="text-neutral-600">No posts found in this topic.</p>
+        <p className="text-secondary-text">No posts found in this topic.</p>
       </div>
     );
   }
@@ -30,7 +30,7 @@ export default function PostList({ posts, subtopics }) {
     <div>
       <SubtopicFilters subtopics={subtopics} onFilter={handleFilter} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredPosts.map(post => (
           <PostCard key={post.slug} post={post} />
         ))}
@@ -38,7 +38,7 @@ export default function PostList({ posts, subtopics }) {
 
       {filteredPosts.length === 0 && (
         <div className="text-center py-12">
-          <p className="text-neutral-600">No posts match this filter.</p>
+          <p className="text-secondary-text">No posts match this filter.</p>
         </div>
       )}
     </div>

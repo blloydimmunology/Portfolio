@@ -6,48 +6,77 @@ import 'katex/dist/katex.min.css';
 
 export default function BlogPost({ post }) {
   return (
-    <article className="max-w-2xl mx-auto">
-      {/* Post header */}
-      <header className="text-center mb-12">
-        <h1 className="text-3xl font-bold text-blue-900 mb-3">
+    <article className="max-w-[680px] mx-auto">
+      {/* Header */}
+      <header className="mb-12">
+        <p className="text-xs uppercase tracking-wider text-primary-accent font-medium mb-4" style={{ letterSpacing: '0.05em' }}>
+          {post.topic}
+        </p>
+
+        <h1 className="text-4xl font-semibold text-primary-text mb-4 font-serif" style={{ lineHeight: '1.3' }}>
           {post.title}
         </h1>
-        <p className="text-sm text-neutral-600">
-          {post.date} • {post.topic}
-        </p>
+
+        <div className="text-sm text-secondary-text mb-8">
+          {post.date}
+        </div>
+
+        {post.subtopics && post.subtopics.length > 0 && (
+          <>
+            <div className="border-t border-divider my-8" />
+            <div className="flex gap-2 flex-wrap text-sm text-tertiary-text">
+              {post.subtopics.map((subtopic, index) => (
+                <span key={subtopic}>
+                  {subtopic}
+                  {index < post.subtopics.length - 1 && ' |'}
+                </span>
+              ))}
+            </div>
+          </>
+        )}
       </header>
 
-      {/* Post content */}
-      <div className="prose prose-sm prose-neutral max-w-none
-                      prose-headings:text-blue-900 prose-headings:font-bold prose-headings:text-center
-                      prose-a:text-blue-900 prose-a:no-underline hover:prose-a:underline
-                      prose-code:text-blue-900 prose-code:bg-blue-50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
-                      prose-pre:bg-neutral-900 prose-pre:text-neutral-100
-                      prose-img:mx-auto prose-img:rounded">
+      {/* Content */}
+      <div className="prose prose-lg max-w-none">
         <ReactMarkdown
           remarkPlugins={[remarkGfm, remarkMath]}
           rehypePlugins={[rehypeKatex]}
+          components={{
+            h2: ({ node, ...props }) => (
+              <h2 className="text-2xl font-semibold text-primary-text mt-12 mb-4 font-serif" {...props} />
+            ),
+            h3: ({ node, ...props }) => (
+              <h3 className="text-xl font-semibold text-primary-text mt-8 mb-3 font-serif" {...props} />
+            ),
+            p: ({ node, ...props }) => (
+              <p className="text-base text-primary-text mb-6" style={{ lineHeight: '1.7' }} {...props} />
+            ),
+            a: ({ node, ...props }) => (
+              <a className="text-primary-accent underline hover:text-primary-accent-hover transition-colors duration-200" {...props} />
+            ),
+            ul: ({ node, ...props }) => (
+              <ul className="mb-6 space-y-2 text-primary-text" style={{ lineHeight: '1.7' }} {...props} />
+            ),
+            ol: ({ node, ...props }) => (
+              <ol className="mb-6 space-y-2 text-primary-text" style={{ lineHeight: '1.7' }} {...props} />
+            ),
+            blockquote: ({ node, ...props }) => (
+              <blockquote className="border-l-[3px] border-primary-accent pl-6 italic text-secondary-text my-6" {...props} />
+            ),
+            code: ({ node, inline, ...props }) =>
+              inline ? (
+                <code className="bg-gray-100 px-1.5 py-0.5 text-sm font-mono" {...props} />
+              ) : (
+                <code className="block bg-gray-100 p-4 text-sm font-mono overflow-x-auto my-6" {...props} />
+              ),
+            img: ({ node, ...props }) => (
+              <img className="w-full my-6" {...props} />
+            ),
+          }}
         >
           {post.content}
         </ReactMarkdown>
       </div>
-
-      {/* Subtopics */}
-      {post.subtopics && post.subtopics.length > 0 && (
-        <div className="mt-12 pt-8 border-t border-blue-100 text-center">
-          <p className="text-xs text-neutral-600 mb-3">Topics</p>
-          <div className="flex gap-2 justify-center flex-wrap">
-            {post.subtopics.map(subtopic => (
-              <span
-                key={subtopic}
-                className="text-xs px-3 py-1 bg-blue-100 text-blue-900 rounded"
-              >
-                {subtopic}
-              </span>
-            ))}
-          </div>
-        </div>
-      )}
     </article>
   );
 }

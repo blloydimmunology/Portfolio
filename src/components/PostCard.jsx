@@ -5,50 +5,48 @@ export default function PostCard({ post }) {
 
   return (
     <Link href={postUrl} className="block group">
-      <article className="bg-white rounded-lg overflow-hidden shadow-sm card-hover border border-neutral-200/60">
+      <article className="bg-white overflow-hidden border border-divider hover:border-primary-accent transition-colors duration-200 h-full flex flex-col">
         {/* Image or placeholder */}
         {post.image ? (
-          <div className="w-full h-56 overflow-hidden relative">
+          <div className="w-full aspect-[16/9] overflow-hidden">
             <img
               src={post.image}
               alt={post.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>
         ) : (
-          <div className="w-full h-56 bg-gradient-to-br from-blue-50 via-white to-indigo-50 flex items-center justify-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.1),rgba(255,255,255,0))]" />
-            <span className="text-6xl opacity-20 relative z-10">🧬</span>
+          <div className="w-full aspect-[16/9] bg-primary-accent-light flex items-center justify-center">
+            <span className="text-5xl font-serif text-primary-accent opacity-30">
+              {post.topic.charAt(0)}
+            </span>
           </div>
         )}
 
         {/* Content */}
-        <div className="p-6">
-          <div className="flex items-center gap-2 mb-3">
-            <span className="text-xs font-semibold text-blue-700 uppercase tracking-wider">
+        <div className="p-6 flex-1 flex flex-col">
+          <div className="flex items-center gap-2 mb-3 text-sm">
+            <span className="text-secondary-text">{post.date}</span>
+            <span className="text-tertiary-text">•</span>
+            <span className="text-xs uppercase tracking-wider text-primary-accent font-medium" style={{ letterSpacing: '0.05em' }}>
               {post.topic}
             </span>
-            <span className="text-xs text-neutral-400">•</span>
-            <span className="text-xs text-neutral-500">{post.date}</span>
           </div>
 
-          <h3 className="text-lg font-bold text-neutral-900 mb-3 leading-snug group-hover:text-blue-900 transition-colors line-clamp-2">
+          <h3 className="text-xl font-semibold text-primary-text mb-3 leading-snug group-hover:text-primary-accent transition-colors duration-200 font-serif">
             {post.title}
           </h3>
 
-          <p className="text-sm text-neutral-600 leading-relaxed mb-4 line-clamp-3">
+          <p className="text-[15px] text-secondary-text leading-relaxed mb-4 flex-1" style={{ lineHeight: '1.6' }}>
             {post.preview}
           </p>
 
           {post.subtopics && post.subtopics.length > 0 && (
-            <div className="flex gap-2 flex-wrap pt-2 border-t border-neutral-100">
-              {post.subtopics.slice(0, 3).map(subtopic => (
-                <span
-                  key={subtopic}
-                  className="text-xs px-2.5 py-1 bg-neutral-100 text-neutral-700 rounded-full font-medium hover:bg-neutral-200 transition-colors"
-                >
+            <div className="flex gap-2 flex-wrap pt-3 border-t border-divider text-xs text-tertiary-text">
+              {post.subtopics.slice(0, 3).map((subtopic, index) => (
+                <span key={subtopic}>
                   {subtopic}
+                  {index < Math.min(post.subtopics.length, 3) - 1 && ' |'}
                 </span>
               ))}
             </div>

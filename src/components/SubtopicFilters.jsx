@@ -3,10 +3,10 @@
 import { useState } from 'react';
 
 export default function SubtopicFilters({ subtopics, onFilter }) {
-  const [selected, setSelected] = useState('all');
+  const [activeSubtopic, setActiveSubtopic] = useState('all');
 
   const handleClick = (subtopic) => {
-    setSelected(subtopic);
+    setActiveSubtopic(subtopic);
     onFilter(subtopic);
   };
 
@@ -15,33 +15,32 @@ export default function SubtopicFilters({ subtopics, onFilter }) {
   }
 
   return (
-    <div className="flex gap-3 justify-center flex-wrap mb-8">
+    <div className="mb-8 flex gap-3 justify-center flex-wrap">
       <button
         onClick={() => handleClick('all')}
         className={`
-          text-xs px-4 py-2 rounded-full font-semibold whitespace-nowrap
-          transition-all duration-200
+          px-4 py-2 text-sm font-medium transition-colors duration-200
+          border
           ${
-            selected === 'all'
-              ? 'bg-blue-900 text-white shadow-md'
-              : 'bg-white text-neutral-700 hover:bg-neutral-100 border border-neutral-200/60 hover:border-neutral-300 hover:shadow-sm'
+            activeSubtopic === 'all'
+              ? 'border-primary-accent text-primary-accent'
+              : 'border-divider text-secondary-text hover:border-primary-accent hover:text-primary-accent'
           }
         `}
       >
         All
       </button>
-
       {subtopics.map(subtopic => (
         <button
           key={subtopic}
           onClick={() => handleClick(subtopic)}
           className={`
-            text-xs px-4 py-2 rounded-full font-semibold whitespace-nowrap
-            transition-all duration-200
+            px-4 py-2 text-sm font-medium transition-colors duration-200
+            border
             ${
-              selected === subtopic
-                ? 'bg-blue-900 text-white shadow-md'
-                : 'bg-white text-neutral-700 hover:bg-neutral-100 border border-neutral-200/60 hover:border-neutral-300 hover:shadow-sm'
+              activeSubtopic === subtopic
+                ? 'border-primary-accent text-primary-accent'
+                : 'border-divider text-secondary-text hover:border-primary-accent hover:text-primary-accent'
             }
           `}
         >

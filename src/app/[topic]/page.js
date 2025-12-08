@@ -8,7 +8,6 @@ import {
   getSubtopicsByTopic
 } from '@/utils/PostLoader';
 
-// Generate static params for all topics
 export async function generateStaticParams() {
   const topics = await getAllTopics();
   return topics.map(topic => ({
@@ -16,7 +15,6 @@ export async function generateStaticParams() {
   }));
 }
 
-// Generate metadata for each topic page
 export async function generateMetadata({ params }) {
   const { topic } = params;
   const topicTitle = topic.charAt(0).toUpperCase() + topic.slice(1);
@@ -29,26 +27,29 @@ export async function generateMetadata({ params }) {
 
 export default async function TopicPage({ params }) {
   const { topic } = params;
-
-  // Get posts for this topic
   const posts = await getPostsByTopic(topic);
 
-  // If no posts found, show 404
   if (!posts || posts.length === 0) {
     notFound();
   }
 
-  // Get subtopics for filtering
   const subtopics = await getSubtopicsByTopic(topic);
-
-  // Capitalize topic for display
   const topicTitle = topic.charAt(0).toUpperCase() + topic.slice(1);
 
   return (
     <>
       <TopBanner currentTopic={topic} />
 
-      <main className="max-w-7xl mx-auto px-6 py-12">
+      <main className="max-w-[1200px] mx-auto px-6 py-16">
+        <div className="mb-12">
+          <h2 className="text-[28px] font-semibold text-primary-text text-center mb-3 font-serif">
+            {topicTitle}
+          </h2>
+          <p className="text-secondary-text text-center text-sm">
+            {posts.length} {posts.length === 1 ? 'article' : 'articles'}
+          </p>
+        </div>
+
         <PostList posts={posts} subtopics={subtopics} />
       </main>
 

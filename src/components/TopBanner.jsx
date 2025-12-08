@@ -2,28 +2,27 @@ import Link from 'next/link';
 import SearchBar from './SearchBar';
 import { siteConfig } from '@/config/site';
 import { getAllTopics, getAllPosts } from '@/utils/PostLoader';
-import { getTopicConfig } from '@/config/topics';
 
 export default async function TopBanner({ currentTopic }) {
   const topics = await getAllTopics();
   const allPosts = await getAllPosts();
 
   return (
-    <header className="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-neutral-200/60 shadow-sm">
+    <header className="bg-white sticky top-0 z-50 border-b border-divider">
       {/* Top row: Menu, Logo, Subscribe */}
-      <div className="border-b border-neutral-200/40">
+      <div className="border-b border-divider">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="w-10" /> {/* Spacer for symmetry */}
 
           <Link href="/" className="block group">
-            <h1 className="text-2xl font-bold text-neutral-900 tracking-tight group-hover:text-blue-900 transition-colors">
+            <h1 className="text-[32px] font-semibold text-primary-text font-serif tracking-tight group-hover:text-primary-accent transition-colors duration-200">
               {siteConfig.title}
             </h1>
           </Link>
 
           <Link
             href="/subscribe"
-            className="px-5 py-2.5 bg-blue-900 text-white text-sm font-semibold rounded-md hover:bg-blue-800 transition-all hover:shadow-md"
+            className="px-6 py-3 bg-primary-accent text-white text-sm font-medium hover:bg-primary-accent-hover transition-colors duration-200"
           >
             Subscribe
           </Link>
@@ -33,25 +32,23 @@ export default async function TopBanner({ currentTopic }) {
       {/* Topic navigation row */}
       <div className="py-5 overflow-x-auto">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center justify-center gap-3 flex-wrap">
+          <div className="flex items-center justify-center gap-6 flex-wrap">
             {topics.map(topic => {
-              const config = getTopicConfig(topic);
               const isActive = currentTopic?.toLowerCase() === topic.toLowerCase();
               return (
                 <Link
                   key={topic}
                   href={`/${topic.toLowerCase()}`}
                   className={`
-                    flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap
-                    transition-all duration-200
+                    px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors duration-200
+                    border-b-2
                     ${
                       isActive
-                        ? 'bg-blue-900 text-white shadow-md'
-                        : 'bg-white text-neutral-700 hover:bg-neutral-100 border border-neutral-200/60 hover:border-neutral-300 hover:shadow-sm'
+                        ? 'text-primary-accent border-primary-accent'
+                        : 'text-secondary-text border-transparent hover:text-primary-accent hover:border-divider'
                     }
                   `}
                 >
-                  <span className="text-base">{config.icon}</span>
                   {topic}
                 </Link>
               );
@@ -61,7 +58,7 @@ export default async function TopBanner({ currentTopic }) {
       </div>
 
       {/* Search bar */}
-      <div className="py-4 bg-neutral-50/50">
+      <div className="py-4 bg-white">
         <div className="max-w-2xl mx-auto px-6">
           <SearchBar allPosts={allPosts} />
         </div>
