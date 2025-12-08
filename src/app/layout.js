@@ -1,10 +1,17 @@
-import { Inter } from "next/font/google";
+import { Inter, Crimson_Text } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
 
 const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-inter'
+});
+
+const crimsonText = Crimson_Text({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-crimson'
 });
 
 export const metadata = {
@@ -17,10 +24,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="font-sans antialiased">
-        {children}
-      </body>
+    <html lang="en" className={`${inter.variable} ${crimsonText.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

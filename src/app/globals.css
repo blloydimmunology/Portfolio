@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-neutral-50 text-neutral-800;
+    @apply bg-white text-primary-text font-sans;
     font-feature-settings: "liga" 1, "kern" 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -14,13 +14,5 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
-  }
-
-  .card-hover {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .card-hover:hover {
-    transform: translateY(-4px);
   }
 }
