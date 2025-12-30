@@ -43,22 +43,22 @@ export default function BlogPost({ post }) {
           rehypePlugins={[rehypeKatex]}
           components={{
             h2: ({ node, ...props }) => (
-              <h2 className="text-2xl font-semibold text-primary-text mt-12 mb-4 font-serif" {...props} />
+              <h2 className="text-xl font-semibold text-primary-text mt-12 mb-4 font-serif" {...props} />
             ),
             h3: ({ node, ...props }) => (
-              <h3 className="text-xl font-semibold text-primary-text mt-8 mb-3 font-serif" {...props} />
+              <h3 className="text-lg font-semibold text-primary-text mt-8 mb-3 font-serif" {...props} />
             ),
             p: ({ node, ...props }) => (
-              <p className="text-base text-primary-text mb-6" style={{ lineHeight: '1.7' }} {...props} />
+              <p className="text-sm text-primary-text mb-6" style={{ lineHeight: '1.7' }} {...props} />
             ),
             a: ({ node, ...props }) => (
               <a className="text-primary-accent underline hover:text-primary-accent-hover transition-colors duration-200" {...props} />
             ),
             ul: ({ node, ...props }) => (
-              <ul className="mb-6 space-y-2 text-primary-text" style={{ lineHeight: '1.7' }} {...props} />
+              <ul className="mb-6 space-y-2 text-sm text-primary-text" style={{ lineHeight: '1.7' }} {...props} />
             ),
             ol: ({ node, ...props }) => (
-              <ol className="mb-6 space-y-2 text-primary-text" style={{ lineHeight: '1.7' }} {...props} />
+              <ol className="mb-6 space-y-2 text-sm text-primary-text" style={{ lineHeight: '1.7' }} {...props} />
             ),
             blockquote: ({ node, ...props }) => (
               <blockquote className="border-l-[3px] border-primary-accent pl-6 italic text-secondary-text my-6" {...props} />
@@ -70,7 +70,7 @@ export default function BlogPost({ post }) {
                 <code className="block bg-gray-100 p-4 text-sm font-mono overflow-x-auto my-6" {...props} />
               ),
             img: ({ node, ...props }) => (
-              <img className="w-full my-6" {...props} />
+              <img className="max-w-md mx-auto my-6" {...props} />
             ),
             // Footnote reference (superscript link)
             sup: ({ node, children, ...props }) => {
@@ -119,7 +119,7 @@ export default function BlogPost({ post }) {
                 );
               }
               return (
-                <ol className="mb-6 space-y-2 text-primary-text" style={{ lineHeight: '1.7' }} {...props} />
+                <ol className="mb-6 space-y-2 text-sm text-primary-text" style={{ lineHeight: '1.7' }} {...props} />
               );
             },
             // Footnote list item
