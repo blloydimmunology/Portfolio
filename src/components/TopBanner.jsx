@@ -15,7 +15,7 @@ export default async function TopBanner({ currentTopic }) {
         <div className="max-w-7xl mx-auto px-6 py-5">
           <div className="flex items-center justify-center relative">
             <Link href="/" className="block group">
-              <h1 className="text-[32px] font-semibold text-primary-text font-serif tracking-tight group-hover:text-primary-accent transition-colors duration-200">
+              <h1 className="text-[32px] font-semibold text-primary-text font-serif tracking-normal group-hover:text-primary-accent transition-colors duration-200">
                 {siteConfig.title}
               </h1>
             </Link>
@@ -33,6 +33,10 @@ export default async function TopBanner({ currentTopic }) {
         <div className="flex items-center justify-center gap-6 flex-wrap px-6">
           {topics.map(topic => {
             const isActive = currentTopic?.toLowerCase() === topic.toLowerCase();
+            const displayTopic = topic
+              .split('-')
+              .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(' ');
             return (
               <Link
                 key={topic}
@@ -47,7 +51,7 @@ export default async function TopBanner({ currentTopic }) {
                   }
                 `}
               >
-                {topic}
+                {displayTopic}
               </Link>
             );
           })}

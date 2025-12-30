@@ -17,7 +17,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { topic } = await params;
-  const topicTitle = topic.charAt(0).toUpperCase() + topic.slice(1);
+  const topicTitle = topic
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 
   return {
     title: "Bryce's Journal",
@@ -34,7 +37,10 @@ export default async function TopicPage({ params }) {
   }
 
   const subtopics = await getSubtopicsByTopic(topic);
-  const topicTitle = topic.charAt(0).toUpperCase() + topic.slice(1);
+  const topicTitle = topic
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 
   return (
     <>

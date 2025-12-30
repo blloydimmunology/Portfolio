@@ -5,7 +5,7 @@ export default function PostCard({ post }) {
 
   return (
     <Link href={postUrl} className="block group">
-      <article className="bg-white overflow-hidden border border-divider hover:border-primary-accent transition-colors duration-200 h-full flex flex-col">
+      <article className="bg-white overflow-hidden border-2 border-divider hover:border-primary-accent transition-colors duration-200 h-full flex flex-col">
         {/* Image or placeholder */}
         {post.image ? (
           <div className="w-full aspect-[16/9] overflow-hidden">
