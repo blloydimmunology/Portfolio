@@ -4,7 +4,7 @@ date: "2026-02-11"
 preview: "This paper helped move checkpoint immunotherapy toward a genomic logic: the more altered a tumor is, the more chances the immune system may have to notice it."
 topic: "Cancer Biology"
 subtopics: ["Tumor Microenvironment"]
-image: "/blog-images/blog2_4.jpg"
+image: "/blog-images/blog14_2.jpeg"
 ---
 
 
@@ -70,9 +70,8 @@ A mutation can drive growth, but it can also create vulnerability. That is such 
 
 ## My Favorite Figure
 
-My favorite figure is the one aligning mutation burden with clinical benefit groups.
+![Figure 1](/blog-images/blog14_1.jpg)
 
-It is not the flashiest kind of figure, but it is the one that made the field’s intuition sharper. Once that relationship is visible, the rest of the paper reads differently.
 
 
 ---

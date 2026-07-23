@@ -4,7 +4,7 @@ date: "2026-02-11"
 preview: "In a phase 2 study of mismatch repair-deficient locally advanced rectal cancer, single-agent dostarlimab produced a clinical complete response in every evaluable patient reported, with no patient proceeding to chemoradiotherapy or surgery during the follow-up window. "
 topic: "Immunotherapy"
 subtopics: ["Targeted Therapy", "Cancer"]
-image: "/blog-images/blog2_4.jpg"
+image: "/blog-images/blog5_2.png"
 ---
 
 Some papers feel important before all the follow-up matures because they force you to rethink the order of treatment. This is one of those papers. Standard treatment for locally advanced rectal cancer usually means some combination of chemotherapy, radiation, and surgery. This study asked whether a very specific molecular subgroup could skip that sequence entirely, at least for the moment, by starting with PD-1 blockade alone. 
@@ -39,7 +39,7 @@ What this paper changed for me is the meaning of “neoadjuvant.” Usually it i
 
 ## My Favorite Figure
 
-Figure 1 is my favorite because it shows representative patients across multiple modalities at baseline, 3 months, and 6 months. Endoscopy, rectal MRI, and FDG-PET all move together, which makes the idea of a “clinical complete response” feel concrete rather than abstract. For a paper this dramatic, I like having a figure that lets you actually see the disappearance instead of only reading the percentage. 
+![Figure 2d](/blog-images/blog5_1.jpg)
 
 ---
 

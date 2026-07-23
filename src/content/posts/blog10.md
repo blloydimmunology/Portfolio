@@ -4,7 +4,7 @@ date: "2026-02-11"
 preview: "This paper made me think differently about T-cell metabolism because it argues that one small metabolite, phosphoenolpyruvate, can directly shape signaling and antitumor function."
 topic: "Immunotherapy"
 subtopics: ["Metabolism", "T-cells"]
-image: "/blog-images/blog2_4.jpg"
+image: "/blog-images/blog10_2.png"
 ---
 
 
@@ -74,15 +74,12 @@ I think this study lives in the second category, and that is why it stuck with m
 
 ## My Favorite Figure
 
-My favorite figure is the one connecting low PEP with altered calcium signaling and then showing that restoring PEP through engineering improves T-cell function.
+![Figure 6](/blog-images/blog10_1.jpg)
 
-That is the point where the study stops being a metabolism observation and becomes a mechanistic story with translational relevance.
 
 ---
 
 ## References
 1. Ho PC, Bihuniak JD, Macintyre AN, Staron M, Liu X, Amezquita R, et al. Phosphoenolpyruvate Is a Metabolic Checkpoint of Anti-tumor T Cell Responses. Cell. 2015.
 
-2. Pearce EL, Poffenberger MC, Chang CH, Jones RG. Fueling Immunity: Insights into Metabolism and Lymphocyte Function. Science. 2013.
 
-3. Buck MD, Sowell RT, Kaech SM, Pearce EL. Metabolic Instruction of Immunity. Cell. 2017.

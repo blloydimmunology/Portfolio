@@ -4,7 +4,7 @@ date: "2026-02-11"
 preview: "This paper is one of the clearest demonstrations that long-term remission after CAR T therapy is not just about expansion. It is about persistence, cell state, and the kind of T cell that survives."
 topic: "Immunotherapy"
 subtopics: ["CAR-T", "Translational Science"]
-image: "/blog-images/blog2_4.jpg"
+image: "/blog-images/blog13_2.jpeg"
 ---
 
 CAR T cells get described as living drugs all the time, but I think we usually say that in a metaphorical way. The Melenhorst et al. paper makes it feel literal. It looks at patients with decade-long remissions after CD19 CAR T-cell therapy and asks what those long-lived remissions actually look like biologically. The answer is not just “a lot of CAR T cells.” It is a much stranger and more interesting story about persistence, clonal selection, and a durable CD4-dominant population.
@@ -67,9 +67,8 @@ A pill does not change lineages. A cell therapy does. It survives, contracts, pe
 
 ## My Favorite Figure
 
-My favorite figure would be the one that best shows long-term persistence and the phenotype of the surviving CAR T-cell population.
+![Figure 1a](/blog-images/blog13_1.jpg)
 
-That is the heart of the study. Not the initial response curve, but the proof that a distinct engineered immune population was still around and still relevant years later.
 
 
 ---

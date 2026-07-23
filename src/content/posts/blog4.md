@@ -3,8 +3,8 @@ title: "Why Risankizumab Works Across Skin, Joint, and Gut Disease"
 date: "2026-02-11"
 preview: "This mini-review is less about a single experiment and more about building a translational map for risankizumab, tying IL-23 biology to dosing, pharmacokinetics, biomarkers, and pivotal efficacy data across psoriasis, psoriatic arthritis, and Crohn’s disease."
 topic: "Immunotherapy"
-subtopics: ["Antibodies", "Psoriasis"]
-image: "/blog-images/blog2_4.jpg"
+subtopics: ["Antibodies", "Psoriasis", "Autoimmune Disease"]
+image: "/blog-images/blog4_2.jpeg"
 ---
 
 Not every useful paper needs to introduce a brand-new mechanism. Sometimes the most helpful thing is a clean synthesis that explains why a drug makes sense across several diseases at once. That is what this risankizumab mini-review is doing. It gathers mechanism of action, PK/PD, immunogenicity, and trial data into one place and makes the development logic of IL-23 blockade much easier to see. 
@@ -39,7 +39,7 @@ This paper reminded me how much invisible quantitative reasoning is baked into w
 
 ## My Favorite Figure
 
-Figure 1 is easily my favorite because it gives a unified picture of IL-23 biology across psoriasis, psoriatic arthritis, and Crohn’s disease. For a review like this, that matters more than a complicated forest plot. It lets you see why one cytokine node can become therapeutically relevant in the skin, the joints, and the gut without pretending those diseases are identical. 
+![Figure 1](/blog-images/blog4_1.jpg)
 
 ---
 

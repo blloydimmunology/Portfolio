@@ -4,7 +4,7 @@ date: "2026-02-11"
 preview: "A very serious, very biased argument that Interstellar is the perfect mix of story, science, emotion, and cosmic weirdness."
 topic: "Random"
 subtopics: ["Physics", "Movies", "Space"]
-image: "/blog-images/blog2_4.jpg"
+image: "/blog-images/blog7_1.jpeg"
 ---
 
 I know “greatest movie ever made” is a ridiculous phrase because everyone has their own taste, but I genuinely think *Interstellar* has the best case. It is not just that the movie looks amazing, or that the music is insane, or that the ending hits emotionally. It is that the whole movie feels like a perfect combination of story, science, mystery, and human emotion. It makes space feel massive, physics feel personal, and love feel like something that can exist inside a story about black holes without making the movie cheesy.

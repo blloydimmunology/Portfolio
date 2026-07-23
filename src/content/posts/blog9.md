@@ -4,7 +4,7 @@ date: "2026-02-11"
 preview: "This paper argues that tumors do not only evade immunity with checkpoints and suppressive ligands. They may also win by taking the fuel first."
 topic: "Immunotherapy"
 subtopics: ["Metabolism", "Tumor Microenvironment"]
-image: "/blog-images/blog2_4.jpg"
+image: "/blog-images/blog9_2.png"
 ---
 
 One of the easier ways to misunderstand cancer immunology is to imagine that the main problem is recognition. Either T cells see the tumor or they do not. Either checkpoints are up or they are blocked. But that framing leaves out something more physical: even if a T cell recognizes a tumor, can it still function in an environment where the tumor is aggressively consuming the nutrients both cells need? That is what makes the Chang et al. paper so interesting. It takes a problem that sounds abstract, immune suppression, and asks whether part of it is really just metabolic competition.
@@ -69,9 +69,8 @@ That sounds obvious once you say it out loud, but it is easy to forget when read
 
 ## My Favorite Figure
 
-My favorite figure is the one that most directly places tumor cells and T cells in the same metabolic frame, showing the contrast between tumor glucose use and T-cell functional impairment.
+![Figure 5](/blog-images/blog9_2.jpg)
 
-That is the figure where the paper becomes more than a nice idea. It stops being “tumors are glycolytic” plus “T cells need glucose” and becomes “these two realities are colliding in the same space.”
 
 
 ---
@@ -79,6 +78,3 @@ That is the figure where the paper becomes more than a nice idea. It stops being
 ## References
 1. Chang CH, Qiu J, O’Sullivan D, Buck MD, Noguchi T, Curtis JD, et al. Metabolic Competition in the Tumor Microenvironment Is a Driver of Cancer Progression. Cell. 2015.
 
-2. Chang CH, Curtis JD, Maggi LB Jr, Faubert B, Villarino AV, O’Sullivan D, et al. Posttranscriptional Control of T Cell Effector Function by Aerobic Glycolysis. Cell. 2013.
-
-3. Bengsch B, Johnson AL, Kurachi M, Odorizzi PM, Pauken KE, Attanasio J, et al. Bioenergetic Insufficiencies Due to Metabolic Alterations Regulated by the Inhibitory Receptor PD-1 Are an Early Driver of CD8+ T Cell Exhaustion. Immunity. 2016.

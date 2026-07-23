@@ -4,7 +4,7 @@ date: "2026-02-11"
 preview: "This preprint treats one of solid-tumor CAR-T’s biggest problems as a movement problem, engineering “velocity receptors” that push T cells into a more migratory state and improve infiltration, tumor control, and survival in preclinical models."
 topic: "Immunotherapy"
 subtopics: ["CAR-T"]
-image: "/blog-images/blog2_4.jpg"
+image: "/blog-images/blog3_2.jpg"
 ---
 
 A lot of solid-tumor CAR-T work focuses on recognition. Can the cells find the antigen? Can they avoid exhaustion? Can they survive suppression? This paper does something different that I really liked: it asks whether the cells can physically move well enough to matter once they reach a collagen-rich tumor. That sounds basic, but in solid tumors it may be one of the main rate-limiting steps. 
@@ -39,7 +39,7 @@ The distinction between migration and chemotaxis landed harder for me than I exp
 
 ## My Favorite Figure
 
-Figure 4h is my favorite because it compresses the whole paper into one relationship. The authors plot tumor volume against the number of infiltrated CAR-T cells in the pancreatic model and show a clear inverse correlation. That matters. It means the migration story is not just a microscopy story. It ties deeper infiltration to actual tumor control, which is the point of the whole engineering strategy. 
+![Figure 4h](/blog-images/blog3_1.jpg)
 
 
 

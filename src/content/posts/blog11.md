@@ -4,7 +4,7 @@ date: "2026-02-11"
 preview: "This paper helped define intratumoral T-cell dysfunction as a mitochondrial problem, not just an exhaustion-marker problem."
 topic: "Immunotherapy"
 subtopics: ["Metabolism", "Tumor Microenvironment"]
-image: "/blog-images/blog2_4.jpg"
+image: "/blog-images/blog11_2.jpeg"
 ---
 
 
@@ -68,9 +68,8 @@ That sounds obvious in hindsight, but I think people, including me, sometimes me
 
 ## My Favorite Figure
 
-My favorite figure is the one showing that restoring mitochondrial biogenesis through PGC1α changes T-cell metabolic status and improves antitumor function.
+![Figure 1c](/blog-images/blog11_1.jpg)
 
-That figure matters because it upgrades the paper from descriptive pathology to actionable biology.
 
 
 ---
