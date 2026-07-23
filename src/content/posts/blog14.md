@@ -2,7 +2,7 @@
 title: "Why More Mutations Can Make a Tumor More Visible"
 date: "2026-02-11"
 preview: "This paper helped move checkpoint immunotherapy toward a genomic logic: the more altered a tumor is, the more chances the immune system may have to notice it."
-topic: "Cancer Biology"
+topic: "CancerBiology"
 subtopics: ["Tumor Microenvironment"]
 image: "/blog-images/blog14_2.jpeg"
 ---
