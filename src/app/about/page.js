@@ -66,7 +66,7 @@ export default function AboutPage() {
             </p>
             
             <p>
-              My resume is attached below if you would like to learn more about me:
+              My CV is attached below if you would like to learn more about me:
             </p>
             <ResumeViewer />
           </div>
