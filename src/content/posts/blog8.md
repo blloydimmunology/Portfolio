@@ -4,7 +4,7 @@ date: "2026-02-11"
 preview: "A classic cancer genetics paper showed that p53 was not helping cancer grow. Cancer was deleting and mutating it to get p53 out of the way."
 topic: "Cancer Biology"
 subtopics: ["Genetics", "Tumor Suppressor"]
-image: "/blog-images/blog2_4.jpg"
+image: "/blog-images/blog8_2.jpeg"
 ---
 
 There are some papers where the result feels less like a small experimental finding and more like a change in how people are supposed to think. Bert Vogelstein’s work on p53 is one of those moments. Today, p53 is one of the most famous genes in cancer biology. It is taught as the “guardian of the genome,” the cellular decision-maker that helps determine whether a damaged cell should pause, repair itself, or die. But that was not always obvious.
@@ -101,11 +101,8 @@ I also think this paper shows why human tumor samples are so valuable. Cell line
 
 ## My Favorite Figure
 
-My favorite part of the paper is the figure or table that pairs chromosome 17 loss with p53 mutation status across colorectal tumors.
+![Figure 3](/blog-images/blog8_1.jpg)
 
-That kind of data is not flashy in the modern sense. It is not single-cell sequencing or spatial transcriptomics or a giant multi-omics plot. But conceptually, it is exactly what you want. It shows the two-hit logic clearly: one allele is lost, and the other is mutated.
-
-To me, that is the figure that makes the paper click. It turns p53 from “a gene near a deleted region” into “the likely target of the deletion.” And once you see that pattern, the whole interpretation changes.
 
 
 

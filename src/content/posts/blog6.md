@@ -4,7 +4,7 @@ date: "2026-02-11"
 preview: "A quick thought on one of the strangest ideas in physics: particles sometimes show up where classical physics says they should not be able to go."
 topic: "Random"
 subtopics: ["Physics", "Quantum Mechanics"]
-image: "/blog-images/blog2_4.jpg"
+image: "/blog-images/blog6_1.jpeg"
 ---
 
 
