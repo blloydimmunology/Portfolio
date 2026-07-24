@@ -1,6 +1,6 @@
 ---
 title: "The Three-Page Afterthought"
-date: "2026-02-11"
+date: "2025-02-26"
 preview: "The last of the 1905 papers is the famous one, and it is barely a paper. It runs about three pages, contains no new physics, and follows entirely from the relativity paper Einstein had submitted three months earlier."
 topic: "Random"
 subtopics: ["Physics"]

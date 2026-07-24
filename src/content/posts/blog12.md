@@ -1,6 +1,6 @@
 ---
 title: "Teaching T Cells to Enter the Part of the Tumor They Usually Miss"
-date: "2026-02-11"
+date: "2026-05-13"
 preview: "This paper tackles a problem that gets less attention than killing: how to get engineered T cells into immune-excluded tumors in the first place."
 topic: "Immunotherapy"
 subtopics: ["CAR-T", "Synthetic Biology", "Tumor Microenvironment"]

@@ -1,6 +1,6 @@
 ---
 title: "Velocity Receptors Push CAR T Cells Deeper Into Solid Tumors"
-date: "2026-02-11"
+date: "2026-01-11"
 preview: "This preprint treats one of solid-tumor CAR-T’s biggest problems as a movement problem, engineering “velocity receptors” that push T cells into a more migratory state and improve infiltration, tumor control, and survival in preclinical models."
 topic: "Immunotherapy"
 subtopics: ["CAR-T"]

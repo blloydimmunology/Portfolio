@@ -1,6 +1,6 @@
 ---
 title: "A Special Kind of Relativity"
-date: "2026-02-11"
+date: "2025-02-05"
 preview: "Special relativity is usually taught as a response to the Michelson-Morley experiment. Physicists looked for the ether, failed to find it, and Einstein explained why."
 topic: "Random"
 subtopics: ["Physics"]

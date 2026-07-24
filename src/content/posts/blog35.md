@@ -1,6 +1,6 @@
 ---
 title: "Signal Detection Theory"
-date: "2026-02-11"
+date: "2026-04-08"
 preview: "Important psychology section for test day"
 topic: "MCAT"
 subtopics: ["Psych/Soc"]

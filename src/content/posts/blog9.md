@@ -1,6 +1,6 @@
 ---
 title: "When Cancer Starves the Immune System"
-date: "2026-02-11"
+date: "2025-11-09"
 preview: "This paper argues that tumors do not only evade immunity with checkpoints and suppressive ligands. They may also win by taking the fuel first."
 topic: "Immunotherapy"
 subtopics: ["Metabolism", "Tumor Microenvironment"]

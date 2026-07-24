@@ -1,6 +1,6 @@
 ---
 title: "A Regulator Cell's Paradox"
-date: "2026-02-11"
+date: "2025-04-30"
 preview: "Regulatory T cells are usually cast as the immune system's brakes. Foxp3 defines the lineage, the lineage suppresses inflammation, and defects in it produce catastrophic autoimmunity. But in psoriatic skin, a fraction of Foxp3⁺ cells produce IL-17A, the same cytokine that drives the disease."
 topic: "Immunology"
 subtopics: ["Autoimmunity", "T-cells"]

@@ -1,6 +1,6 @@
 ---
 title: "The T Cell Takes the Antigen With It"
-date: "2026-02-11"
+date: "2025-05-24"
 preview: "The intuitive assumption is that antigen-low relapse is the same process caught early — a tumor on its way to antigen-negative, or a subclone that always expressed less CD19 being selected. This paper argues the tumor is not doing anything."
 topic: "Immunotherapy"
 subtopics: ["CAR-T", "Tumor Microenvironment"]

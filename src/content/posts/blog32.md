@@ -1,6 +1,6 @@
 ---
 title: "Attribution Theory"
-date: "2026-02-11"
+date: "2026-02-04"
 preview: "Some attribution theory pointers for test day"
 topic: "MCAT"
 subtopics: ["Psych/Soc"]

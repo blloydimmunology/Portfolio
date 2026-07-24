@@ -1,6 +1,6 @@
 ---
 title: "The Last of Us"
-date: "2026-02-11"
+date: "2024-12-04"
 preview: "Cordyceps became a household word through *The Last of Us*, and the premise the game builds on is roughly accurate as far as it goes: there is a fungus that infects insects, alters their behavior in specific and reproducible ways, and kills them in a location that benefits the fungus."
 topic: "Random"
 subtopics: ["Science", "Movies"]

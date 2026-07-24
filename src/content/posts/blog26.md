@@ -1,6 +1,6 @@
 ---
 title: "Expanding to Solid Tumors"
-date: "2026-02-11"
+date: "2025-12-17"
 preview: "The field's response has been to engineer around each of them — dual targeting, chemokine receptors, armored constructs, TGF-β resistance. That work is real and this Perspective covers it."
 topic: "Immunotherapy"
 subtopics: ["CAR-T", "Solid Tumors"]

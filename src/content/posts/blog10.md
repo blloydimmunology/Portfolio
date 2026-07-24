@@ -1,6 +1,6 @@
 ---
 title: "Metabolites Can Act Like Checkpoints"
-date: "2026-02-11"
+date: "2026-04-29"
 preview: "This paper made me think differently about T-cell metabolism because it argues that one small metabolite, phosphoenolpyruvate, can directly shape signaling and antitumor function."
 topic: "Immunotherapy"
 subtopics: ["Metabolism", "T-cells"]

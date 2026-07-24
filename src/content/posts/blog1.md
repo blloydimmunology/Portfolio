@@ -1,6 +1,6 @@
 ---
 title: "Metabolic Fitness as a Limiting Factor in CAR-NK Therapy"
-date: "2025-12-30"
+date: "2026-06-11"
 preview: "Why do CAR-NK therapies work… until they don’t? This post looks at a paper by the Rezvani Lab that argues relapse isn’t just the tumor getting smarter, but immune cells slowly running out of energy."
 topic: "Immunotherapy"
 subtopics: ["CAR-NK", "Metabolism"]

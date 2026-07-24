@@ -1,6 +1,6 @@
 ---
 title: "The Twenty Amino Acids"
-date: "2026-02-11"
+date: "2025-08-13"
 preview: "All about amino acid"
 topic: "MCAT"
 subtopics: ["Chem/Phys", "Bio/Biochem"]

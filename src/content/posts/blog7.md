@@ -1,6 +1,6 @@
 ---
 title: "Why Interstellar Is the Greatest Movie Ever Made"
-date: "2026-02-11"
+date: "2024-08-14"
 preview: "A very serious, very biased argument that Interstellar is the perfect mix of story, science, emotion, and cosmic weirdness."
 topic: "Random"
 subtopics: ["Physics", "Movies", "Space"]

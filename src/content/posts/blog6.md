@@ -1,6 +1,6 @@
 ---
 title: "Quantum Tunneling Feels Like Cheating, But It Isn’t"
-date: "2026-02-11"
+date: "2024-09-04"
 preview: "A quick thought on one of the strangest ideas in physics: particles sometimes show up where classical physics says they should not be able to go."
 topic: "Random"
 subtopics: ["Physics", "Quantum Mechanics"]

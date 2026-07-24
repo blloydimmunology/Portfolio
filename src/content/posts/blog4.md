@@ -1,6 +1,6 @@
 ---
 title: "Why Risankizumab Works Across Skin, Joint, and Gut Disease"
-date: "2026-02-11"
+date: "2025-12-03"
 preview: "This mini-review is less about a single experiment and more about building a translational map for risankizumab, tying IL-23 biology to dosing, pharmacokinetics, biomarkers, and pivotal efficacy data across psoriasis, psoriatic arthritis, and Crohn’s disease."
 topic: "Immunotherapy"
 subtopics: ["Antibodies", "Psoriasis", "Autoimmune Disease"]

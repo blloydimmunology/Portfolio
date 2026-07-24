@@ -1,6 +1,6 @@
 ---
 title: "The Moment p53 Became a Tumor Suppressor"
-date: "2026-02-11"
+date: "2024-09-25"
 preview: "A classic cancer genetics paper showed that p53 was not helping cancer grow. Cancer was deleting and mutating it to get p53 out of the way."
 topic: "CancerBiology"
 subtopics: ["Genetics", "Tumor Suppressor"]

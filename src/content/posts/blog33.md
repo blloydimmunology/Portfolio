@@ -1,6 +1,6 @@
 ---
 title: "The Doppler Effect"
-date: "2026-02-11"
+date: "2026-02-25"
 preview: "Niche topic that may pay dividends on test day!"
 topic: "MCAT"
 subtopics: ["Chem/Phys"]

@@ -1,6 +1,6 @@
 ---
 title: "Light Behaves Like Particles, Sometimes"
-date: "2026-02-11"
+date: "2024-12-18"
 preview: "Einstein's photoelectric paper is the one that won him the Nobel Prize, and it's the only one of the 1905 papers he described as revolutionary."
 topic: "Random"
 subtopics: ["Physics"]

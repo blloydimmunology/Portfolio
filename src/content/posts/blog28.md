@@ -1,6 +1,6 @@
 ---
 title: "Sn1 vs Sn2 Reactions"
-date: "2026-02-11"
+date: "2025-07-02"
 preview: "Substitution Reactions!"
 topic: "MCAT"
 subtopics: ["Chem/Phys"]

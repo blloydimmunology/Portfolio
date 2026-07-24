@@ -1,6 +1,6 @@
 ---
 title: "Two Receptors, One Signal"
-date: "2026-02-11"
+date: "2025-09-03"
 preview: "The design question becomes which two antigens, and the engineering question becomes how to fit two binders onto a cell — tandem scFvs, bicistronic vectors, two separate CARs."
 topic: "Immunotherapy"
 subtopics: ["CAR-T", "Metabolism"]

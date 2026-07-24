@@ -1,6 +1,6 @@
 ---
 title: "Oppenheimer"
-date: "2026-02-11"
+date: "2024-11-06"
 preview: "Oppenheimer is unusual among films about physics in that the physics is mostly correct and mostly load-bearing. It also compresses, reorders, and occasionally invents."
 topic: "Random"
 subtopics: ["Movies", "Physics"]

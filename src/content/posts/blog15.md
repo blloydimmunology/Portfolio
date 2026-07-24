@@ -1,6 +1,6 @@
 ---
 title: "The Cancer-Immunity Cycle: a New Way to Think About Immunotherapy"
-date: "2026-02-11"
+date: "2025-03-19"
 preview: "This is not a data-heavy paper in the usual sense, but it may be one of the most useful conceptual frameworks in modern immuno-oncology."
 topic: "Immunotherapy"
 subtopics: ["T-cells", "Cancer"]

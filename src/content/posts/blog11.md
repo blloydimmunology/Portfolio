@@ -1,6 +1,6 @@
 ---
 title: "When Tumor T Cells Run Out of Power"
-date: "2026-02-11"
+date: "2025-09-24"
 preview: "This paper helped define intratumoral T-cell dysfunction as a mitochondrial problem, not just an exhaustion-marker problem."
 topic: "Immunotherapy"
 subtopics: ["Metabolism", "Tumor Microenvironment"]

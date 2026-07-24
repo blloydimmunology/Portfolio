@@ -1,6 +1,6 @@
 ---
 title: "The Most Cited Paper Nobody Reads"
-date: "2026-02-11"
+date: "2024-10-24"
 preview: "This paper has been cited well over 300,000 times, which for most of the last several decades made it the most cited paper in the scientific literature."
 topic: "Random"
 subtopics: ["Science", "Methods"]

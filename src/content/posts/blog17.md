@@ -1,6 +1,6 @@
 ---
 title: "A New Form of Motion"
-date: "2026-02-11"
+date: "2025-01-15"
 preview: "The Brownian motion paper is usually presented as the one that proved atoms exist. That is roughly what it accomplished, but it badly misdescribes what Einstein was doing."
 topic: "Random"
 subtopics: ["Physics"]

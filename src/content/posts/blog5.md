@@ -1,6 +1,6 @@
 ---
 title: "PD-1 Blockade Before Chemoradiation in dMMR Rectal Cancer"
-date: "2026-02-11"
+date: "2025-10-15"
 preview: "In a phase 2 study of mismatch repair-deficient locally advanced rectal cancer, single-agent dostarlimab produced a clinical complete response in every evaluable patient reported, with no patient proceeding to chemoradiotherapy or surgery during the follow-up window. "
 topic: "Immunotherapy"
 subtopics: ["Targeted Therapy", "Cancer"]

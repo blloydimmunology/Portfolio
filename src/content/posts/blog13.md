@@ -1,6 +1,6 @@
 ---
 title: "What It Means for a Living Drug to Last a Decade"
-date: "2026-02-11"
+date: "2025-06-11"
 preview: "This paper is one of the clearest demonstrations that long-term remission after CAR T therapy is not just about expansion. It is about persistence, cell state, and the kind of T cell that survives."
 topic: "Immunotherapy"
 subtopics: ["CAR-T", "Translational Science"]

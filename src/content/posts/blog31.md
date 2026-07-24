@@ -1,6 +1,6 @@
 ---
 title: "Enzyme Inhibition"
-date: "2026-02-11"
+date: "2026-01-14"
 preview: "Enzyme inhibitors and how that impacts parameters"
 topic: "MCAT"
 subtopics: ["Bio/Biochem"]
